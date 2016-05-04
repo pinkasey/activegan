@@ -1,16 +1,16 @@
 # Create namespace
 window.WPHC = window.WPHC || {}
 
-require 'ionic-sdk/release/js/ionic.bundle.js'
+require 'ionic-angular/release/js/ionic.bundle.js'
 require './angular-ios9-uiwebview.patch.js'
 require 'angular-cache'
 require 'angular-moment'
 require 'moment'
 require './font/font.coffee'
-require 'ionic-native-transitions'
 require 'expose?_!lodash'
 require 'wp-api-angularjs'
 require './config.js'
+require "./service-worker.js";
 overwriteModule = require '../config/index.js'
 customPostsModule = require './customPosts/index.js'
 pagesModule = require './pages/index.js'
@@ -36,7 +36,6 @@ module.exports = app = angular.module 'wordpress-hybrid-client', [
     'ionic'
     'ngIOS9UIWebViewPatch'
     'wordpress-hybrid-client.config'
-    'ionic-native-transitions'
     'ui.router'
     'wp-api-angularjs'
     'angular-cache'
@@ -87,20 +86,6 @@ app.config ($logProvider, $compileProvider) ->
     $compileProvider.debugInfoEnabled if IS_PROD then false else true
 
 ###
-NATIVE TRANSITIONS CONF
-###
-app.config ($WPHCConfig, $ionicNativeTransitionsProvider) ->
-    defaultOptions = _.get $WPHCConfig, 'cordova.nativeTransitions.defaultOptions'
-    defaultTransition = _.get $WPHCConfig, 'cordova.nativeTransitions.defaultTransition'
-    defaultBackTransition = _.get $WPHCConfig, 'cordova.nativeTransitions.defaultBackTransition'
-    enabled = _.get $WPHCConfig, 'cordova.nativeTransitions.enabled'
-    enabled = if _.isBoolean enabled then enabled else true
-    $ionicNativeTransitionsProvider.setDefaultOptions defaultOptions if defaultOptions
-    $ionicNativeTransitionsProvider.setDefaultTransition defaultTransition if defaultTransition
-    $ionicNativeTransitionsProvider.setDefaultBackTransition defaultBackTransition if defaultBackTransition
-    $ionicNativeTransitionsProvider.enable enabled
-
-###
 IONIC CONF
 ###
 app.config require('./config/ionic.config.coffee');
@@ -142,6 +127,7 @@ app.controller 'WPHCMainController' , ($log, $WPHCConfig) ->
     vm.appVersion = wordpressHybridClient.version || null
     vm.appConfig = $WPHCConfig
     vm.appTitle = vm.appConfig.title || null
+    vm.displayIcon = vm.appConfig.menu.displayIcon
     vm
 
 ###

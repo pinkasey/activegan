@@ -81,9 +81,26 @@ For instance if you want to modify the way the menu is displayed, you will need 
 
 After that you will need to register your new template in `lib/templates/index.js` (read the comments for help)
 
+## Service Workers (Experimental)
+
+WPHC supports progressive web apps. When [enabled](#serviceWorker) make sure you modify `config/manifest.json` with your own app informations (title, description etc.) and overwrite all the icons in `config/icons`.
+
+PWA requires a HTTPS connection, make sure to have an SSL certificate.
+
+Chrome dev tools allow you to test the "add to homescreen" feature on the browser.
+
+![image](https://cloud.githubusercontent.com/assets/1388706/19619167/740031b0-9860-11e6-9ca0-ebb5bb9bb152.png)
+
 ## Frequently asked questions
 
-### How to have different style per page
+<details>
+<summary>How to change the font?</summary>
+
+<https://github.com/shprink/wordpress-hybrid-client/issues/238>
+</details>
+
+<details>
+<summary>How to have different style per page?</summary>
 
 For instance you want a specific color on a category header. This is possible through `config/config.scss` file.
 
@@ -102,8 +119,10 @@ html.module-pages{
     }   
 }
 ```
+</details>
 
-### How to change the home page
+<details>
+<summary>How to change the home page?</summary>
 
 The home page is by default the posts page. This can be changed in the `config/config.cson` file.
 
@@ -116,8 +135,10 @@ Add the following and change state and params to the page you want:
         "state": "public.posts"
         "params": {}
 ```
+</details>
 
-#### Set the home page to the pages page:
+<details>
+<summary>Set the home page to the pages page?</summary>
 
 ```
 # MENU
@@ -126,8 +147,10 @@ Add the following and change state and params to the page you want:
         "state": "public.pages"
         "params": {}
 ```
+</details>
 
-#### Set the home page to a specific custom page:
+<details>
+<summary>Set the home page to a specific custom page?</summary>
 
 ```
 # MENU
@@ -138,6 +161,7 @@ Add the following and change state and params to the page you want:
 ```
 
 Consult the `config/menu.json` to know about the different pages state and params.
+</details>
 
 ## `config/config.cson`
 
@@ -147,6 +171,7 @@ Here is a simple view of what you can configure:
 
 * title
 * ionicConfig
+* serviceWorker
 * api
     * baseUrl
     * timeout
@@ -154,6 +179,7 @@ Here is a simple view of what you can configure:
 * menu
     * exposeAsideWhen
     * list
+    * logo
 * settings
 * cache
     * views
@@ -200,13 +226,15 @@ allow overwriting ionic configuration <http://ionicframework.com/docs/api/provid
 
 Setting ```null``` will keep ionic default value.
 
+<a name="serviceWorker"></a>
+### serviceWorker [Object]
+
+* ***enabled***    ```Boolean```    Experiemental. default `false`
+
 ### menu [Object]
 
-The media query used to determine when to always display the left menu.
-
-```
-"exposeAsideWhen": "(min-width:900px)"
-```
+* ***exposeAsideWhen***     ```String```    The media query used to determine when to always display the left menu, default `(min-width:900px)`
+* ***displayIcon***         ```Boolean```   whether or not to display the icon on the menu header. default `true`, to modify the icon overwrite `config/icons/icon_48.png`
 
 ### Settings configuration.
 
@@ -336,6 +364,6 @@ POS_XY
 Programming language auto detection for tech blogs
 
 * ***tabReplace***: a string used to replace TAB characters in indentation.
-* ***useBR***: a flag to generate <br> tags instead of new-line characters in the output, useful when code is marked up using a non-<pre> container.
+* ***useBR***: a flag to generate `<br>` tags instead of new-line characters in the output, useful when code is marked up using a non-`<pre>` container.
 * ***classPrefix***: a string prefix added before class names in the generated markup, used for backwards compatibility with stylesheets.
 * ***languages***: an array of language names and aliases restricting auto detection to only these languages.

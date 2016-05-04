@@ -1,0 +1,23 @@
+[{
+    "type": "internal",
+    "trans": "menu.categories",
+    "route": "public.taxonomies({ term: 'categories', postType: 'post' })",
+    "icon": "icon ion-home"
+}, {
+    "type": "internal",
+    "trans": "menu.posts",
+    "route": "public.posts",
+    "icon": "icon ion-ios-paper"
+}, {
+    "type": "internal",
+    "trans": "menu.bookmarks",
+    "route": "public.bookmarks",
+    "icon": "icon ion-bookmark"
+}, {
+    "type": "separator"
+}, {
+    "type": "internal",
+    "trans": "params.title",
+    "route": "public.params",
+    "icon": "icon ion-gear-b"
+}]
