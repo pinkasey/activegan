@@ -1,0 +1,17 @@
+"title": "Anonymous app"
+
+"api":
+    "baseUrl": "http://activist-anonymousil.rhcloud.com/wp-json"
+    "timeout": 10000
+    "maxAttempt": 2
+
+"translation":
+    "displayed" : ["en", "he"]
+    "prefered": "en"
+
+"cordova":
+    "pushNotifications":
+        "enabled": false
+        "baseUrl": "http://yourDomain.com/pnfw"
+        "android":
+            "senderID": ""
