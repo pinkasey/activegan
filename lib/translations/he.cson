@@ -1,0 +1,89 @@
+"pullToRefresh": "משוך לעדכן!"
+"retry": "נסה שוב"
+"back": "חזור"
+"error": "משהו השתבש. אנא נסה שנית"
+"attemptToConnect": "ניסיון התחברון {{attempt}} מתוך {{attemptMax}}."
+"yes": "כן"
+"no" : "לא"
+"emptyList" : "אין תוכן"
+"enabled": "פעיל"
+"menu":
+    "title": "תפריט"
+    "home": "בית"
+    "tags": "תגיות"
+    "pages": "עמודים"
+    "posts": "פוסטים"
+    "authors": "מחברים"
+    "search": "חיפוש"
+    "bookmarks": "סימניות"
+    "socialNetworks": "רשתות חברתיות"
+    "categories": "קטגוריות"
+    "settings": "אפשרויות"
+    "customPosts": "פוסטים מותאמים אישית"
+    "customTaxonomy": "טקסונומיות מותאמות אישית"
+"pushNotifications":
+    "newContent":
+        "title": "תוכן חדש זמין!"
+        "text": "פוסט/עמוד חדש: '{{postTitle}}' נוסף בתאריך {{appTitle}}, האם ברצונך לפתוח אותו?"
+"bookmark":
+    "title": "סימניות"
+    "emptyList" : "אין סימניות עדיין!"
+    "bookmarked" : "נוסף לסימניות!"
+    "removed" : "סימניה הוסרה!"
+"tags":
+    "title": "תגיות"
+"tag":
+    "title": "תג: {{name}}"
+"customTaxonomy":
+    "title": "{{term}}: {{name}}"
+"categories":
+    "title": "קטגוריות"
+"category":
+    "title": "Category: {{name}}"
+"home":
+    "title": "בית"
+"search":
+    "inputPlaceholder": "חפש"
+    "title": "חיפוש"
+    "titleQuery": "חפש: {{query}}"
+"sharing":
+    "shared": "שותף!"
+"authors":
+    "title": "מחברים"
+"author":
+    "title": "מחבר: {{name}}"
+"pages":
+    "title": "עמודים"
+"posts":
+    "title": "פוסטים"
+    "featured": "מומלץ"
+"post":
+    "comments": "תגובות"
+    "openInBrowser": "פתח בדפדפן"
+"about":
+    "title": "אודות"
+"params":
+    "title": "פרמטרים"
+    "offlineMode": "מצב לא מקוון (בקרוב)"
+    "fontSize": "גודל גופן בפוסטים"
+    "language": "שפה"
+    "pushNotifications": "התראות"
+"languages":
+    "en": "English"
+    "fr": "French"
+    "zh": "Chinese"
+    "es": "Spanish"
+    "pl": "Polish"
+    "de": "German"
+    "pt": "Portuguese"
+    "it": "Italian"
+    "nl": "Dutch"
+    "ru": "Russian"
+    "tr": "Turkish"
+    "he": "Hebrew"
+"fontSize":
+    "small": "קטן"
+    "medium": "בינוני"
+    "large": "גדול"
+    "x-large": "גדול מאוד"
+    "xx-large": "גדול מאוד מאוד"
