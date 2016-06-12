@@ -7,11 +7,6 @@
     "maxAttempt": 2
 
 
-# MENU
-"menu":
-    "defaultState":
-        "state": "public.taxonomies"
-        "params": { term: 'categories', postType: 'post' }
 
 "taxonomies":
     "posts":
@@ -31,3 +26,9 @@
         "baseUrl": "http://activegan.anonymous.org.il/pnfw"
         "android":
             "senderID": "1037605906337"
+
+# MENU
+"menu":
+    "defaultState":
+        "state": "public.taxonomies"
+        "params": { term: 'categories', postType: 'post' }
