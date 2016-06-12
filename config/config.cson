@@ -15,3 +15,9 @@
         "baseUrl": "http://yourDomain.com/pnfw"
         "android":
             "senderID": ""
+
+# MENU (Default)
+"menu":
+    "defaultState":
+        "state": "public.taxonomies"
+        "params": { term: 'category', postType: 'post' }
