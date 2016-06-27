@@ -18,7 +18,7 @@
             </div>
             <wphc-author ng-if="postsCtrl.showAuthor" author="::post._embedded.author[0]" date="::post.date"></wphc-author>
             <!--<div class="item item-text-wrap" ng-if="::post.excerpt.rendered" ng-bind-html="::post.excerpt.rendered"></div>-->
-            <!--<div class="item item-text-wrap" ng-if="::post.featured_media.rendered" ng-bind-html="::post.featured_media.rendered"></div>-->
+            <div class="item item-text-wrap" ng-if="::post.featured_media.rendered" ng-bind-html="::post.featured_media.rendered"></div>
         </div>
         <!--<div class="item item-divider item-footer">-->
             <!--<wphc-post-toolbar post="::post" show-share show-bookmark></wphc-post-toolbar>-->

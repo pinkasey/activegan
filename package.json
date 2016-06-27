@@ -109,10 +109,6 @@
     },
     "cordova-plugin-x-toast@2.1.1",
     {
-        "locator" : "https://github.com/EddyVerbruggen/SocialSharing-PhoneGap-Plugin#4.3.19",
-        "id": "nl.x-services.plugins.socialsharing"
-    },
-    {
         "locator": "https://github.com/driftyco/ionic-plugin-keyboard#v1.0.4",
         "id": "com.ionic.keyboard@1.0.4"
     },
