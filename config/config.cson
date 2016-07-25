@@ -1,7 +1,7 @@
-"title": "Anonymous app"
+"title": "ActiVegan app"
 
 "api":
-    "baseUrl": "http://activist-anonymousil.rhcloud.com/wp-json"
+    "baseUrl": "http://activegan.anonymous.org.il/wp-json"
     "timeout": 7000
     "maxAttempt": 2
 
@@ -11,10 +11,10 @@
 
 "cordova":
     "pushNotifications":
-        "enabled": false
-        "baseUrl": "http://yourDomain.com/pnfw"
+        "enabled": true
+        "baseUrl": "http://activegan.anonymous.org.il/pnfw"
         "android":
-            "senderID": ""
+            "senderID": "1037605906337"
 
 # MENU (Default)
 "menu":

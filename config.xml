@@ -1,10 +1,10 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="il.org.anonymous.Anonymous" version="0.2.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>אנונימוס</name>
+<widget id="il.org.anonymous.ActiVegan" version="0.2.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>אקטיויגן</name>
     <description>
-אפליקציית אנונימוס להסברה על זכויות בעלי חיים
+אפליקציית אקטיויגן של אנונימוס, המיועדת להסברה על זכויות בעלי חיים
     </description>
-    <author email="info@anonymous.org.il" href="http://anonymous.org.il">
+    <author email="dev@anonymous.org.il" href="http://anonymous.org.il">
         Anonymous for Animal Rights
     </author>
     <content src="index.html" />
@@ -13,13 +13,13 @@
     <access origin="*://*.youtube.com/*" />
     <access origin="*://facebook.com/*" />
     <access origin="*://*.facebook.com/*" />
-    <access origin="*://activist-anonymousil.rhcloud.com/*" />
+    <access origin="*://activegan.anonymous.org.il/*" />
     <allow-navigation href="*" />
     <allow-navigation href="*://youtube.com/*" />
     <allow-navigation href="*://*.youtube.com/*" />
     <allow-navigation href="*://facebook.com/*" />
     <allow-navigation href="*://*.facebook.com/*" />
-    <allow-navigation href="*://activist-anonymousil.rhcloud.com/*" />
+    <allow-navigation href="*://activegan.anonymous.org.il/*" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
