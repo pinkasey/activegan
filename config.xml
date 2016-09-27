@@ -1,15 +1,25 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="il.org.anonymous.Anonymous" version="1.1.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>אנונימוס</name>
+<widget id="il.org.anonymous.ActiVegan" version="0.2.6" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    <name>אקטיויגן</name>
     <description>
-אפליקציית אנונימוס להסברה על זכויות בעלי חיים
+אפליקציית אקטיויגן של אנונימוס, המיועדת להסברה על זכויות בעלי חיים
     </description>
-    <author email="info@anonymous.org.il" href="http://anonymous.org.il">
+    <author email="dev@anonymous.org.il" href="http://anonymous.org.il">
         Anonymous for Animal Rights
     </author>
     <content src="index.html" />
     <access origin="*" />
-    <allow-navigation href="http://example.com/*" />
+    <access origin="*://youtube.com/*" />
+    <access origin="*://*.youtube.com/*" />
+    <access origin="*://facebook.com/*" />
+    <access origin="*://*.facebook.com/*" />
+    <access origin="*://activegan.anonymous.org.il/*" />
+    <allow-navigation href="*" />
+    <allow-navigation href="*://youtube.com/*" />
+    <allow-navigation href="*://*.youtube.com/*" />
+    <allow-navigation href="*://facebook.com/*" />
+    <allow-navigation href="*://*.facebook.com/*" />
+    <allow-navigation href="*://activegan.anonymous.org.il/*" />
     <preference name="orientation" value="portrait" />
     <preference name="fullscreen" value="false" />
     <preference name="webviewbounce" value="false" />
@@ -17,14 +27,18 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="BackupWebStorage" value="none" />
     <preference name="SplashScreen" value="screen" />
-    <preference name="ShowSplashScreenSpinner" value="false"/>
-    <preference name="AutoHideSplashScreen" value="false"/>
-    <!-- ANDROID -->
-    <preference name="android-minSdkVersion" value="14"/>
-    <preference name="android-targetSdkVersion" value="14"/>
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="android-minSdkVersion" value="9" />
+    <preference name="android-targetSdkVersion" value="22" />
     <preference name="CROSSWALK_ANDROID_VERSION" value="14+" />
     <preference name="CrosswalkAnimatable" value="true" />
     <preference name="android-windowSoftInputMode" value="adjustNothing" />
+    <preference name="xwalkVersion" value="15+" />
+    <preference name="xwalkCommandLine" value="--disable-pull-to-refresh-effect" />
+    <preference name="xwalkMode" value="embedded" />
+    <preference name="xwalkMultipleApk" value="true" />
+    <preference name="SplashScreenDelay" value="3000" />
     <feature name="StatusBar">
         <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
