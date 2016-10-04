@@ -21,3 +21,9 @@
     "defaultState":
         "state": "public.taxonomies"
         "params": { term: 'category', postType: 'post' }
+
+"taxonomies":
+    "posts":
+        "query":
+            "orderby" : "menu_order"
+            "order": "asc"
