@@ -170,6 +170,7 @@ The default values live under `config/config.default.cson` (file that you should
 Here is a simple view of what you can configure:
 
 * title
+* logo
 * ionicConfig
 * serviceWorker
 * api
@@ -219,6 +220,10 @@ Here is a simple view of what you can configure:
 ### title [String]
 
 Your website title. The title will appear on the top of the left navigation menu
+
+### logo [String] (null to disable, replace original file to customize)
+
+Your website logo. The logo will appear on the left of the title
 
 ### ionicConfig [Object]
 
