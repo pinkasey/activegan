@@ -42,7 +42,7 @@ export default class {
         }
         this.isLoadingMore = true;
 
-        const query = this.getMergedQuery();        
+        const query = this.getMergedQuery();
         this.$log.debug('[AbstractList] type', this.type);
         this.$log.debug('[AbstractList] query', query);
 
