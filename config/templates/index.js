@@ -30,7 +30,7 @@ mod.run(($templateCache) => {
     // $templateCache.put('directive/author.html', require('!html!./directive/author.html'));
     // $templateCache.put('directive/comment.html', require('!html!./directive/comment.html'));
     // $templateCache.put('directive/comments.html', require('!html!./directive/comments.html'));
-    // $templateCache.put('directive/taxonomies.html', require('!html!./directive/taxonomies.html'));
+    $templateCache.put('directive/taxonomies.html', require('!html!./directive/taxonomies.html'));
     // $templateCache.put('directive/emptyList.html', require('!html!./directive/emptyList.html'));
     // $templateCache.put('directive/loader.html', require('!html!./directive/loader.html'));
     // $templateCache.put('directive/menu.html', require('!html!./directive/menu.html'));
