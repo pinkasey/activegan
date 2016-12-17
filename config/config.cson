@@ -1,13 +1,29 @@
 "title": "ActiVegan app"
 
+# API
 "api":
     "baseUrl": "http://activegan.anonymous.org.il/wp-json"
     "timeout": 7000
     "maxAttempt": 2
 
+
+# MENU
+"menu":
+    "defaultState":
+        "state": "public.taxonomies"
+        "params": { term: 'categories', postType: 'post' }
+
+"taxonomies":
+    "posts":
+        "query":
+            "orderby" : "menu_order"
+            "order": "asc"
+
+
 "translation":
     "displayed" : ["en", "he"]
     "prefered": "he"
+
 
 "cordova":
     "pushNotifications":
@@ -15,15 +31,3 @@
         "baseUrl": "http://activegan.anonymous.org.il/pnfw"
         "android":
             "senderID": "1037605906337"
-
-# MENU (Default)
-"menu":
-    "defaultState":
-        "state": "public.taxonomies"
-        "params": { term: 'category', postType: 'post' }
-
-"taxonomies":
-    "posts":
-        "query":
-            "orderby" : "menu_order"
-            "order": "asc"

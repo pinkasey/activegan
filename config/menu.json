@@ -1,7 +1,7 @@
 [{
     "type": "internal",
     "trans": "menu.categories",
-    "route": "public.taxonomies({ term: 'category', postType: 'post' })",
+    "route": "public.taxonomies({ term: 'categories', postType: 'post' })",
     "icon": "icon ion-home"
 }, {
     "type": "internal",
