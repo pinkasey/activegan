@@ -41,11 +41,11 @@ platforms_backup/
 plugins/
 bower_components/
 *.keystore
+release.sh
 about.md
 iOS
 cordova.plugin.backup
 before_build.md
-
-# v1 compatibility
-/config.scss
-/config.json
+/config.xml
+www/
+myapp/
