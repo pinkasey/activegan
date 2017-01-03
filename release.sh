@@ -21,6 +21,13 @@ npm run dumpprod
 if [[ " ${platforms[*]} " == *" android "* ]]; then
     npm run buildProdAndroid
 
+#    jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ${ANDROID_KEY_PATH} platforms/android/build/outputs/apk/android-release-unsigned.apk ${ANDROID_KEY_ALIAS}
+#    jarsigner -verify -certs platforms/android/build/outputs/apk/android-release-unsigned.apk
+#    ${ANDROID_ZIPALIGN} -vf 4 platforms/android/build/outputs/apk/android-release-unsigned.apk ./build/wphc-android.apk
+#
+#    #i want to disable the next 6 lines but i don't want to comment them out. for some reason, i only get one apk - android-release-unsigned.apk
+#    if [[ " ${platforms[*]} " == *" sdfsdfdsf "* ]]; then
+#
     jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ${ANDROID_KEY_PATH} platforms/android/build/outputs/apk/android-x86-release-unsigned.apk ${ANDROID_KEY_ALIAS}
     jarsigner -verify -certs platforms/android/build/outputs/apk/android-x86-release-unsigned.apk
     ${ANDROID_ZIPALIGN} -vf 4 platforms/android/build/outputs/apk/android-x86-release-unsigned.apk ./build/wphc-android-x86.apk
@@ -28,6 +35,8 @@ if [[ " ${platforms[*]} " == *" android "* ]]; then
     jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore ${ANDROID_KEY_PATH} platforms/android/build/outputs/apk/android-armv7-release-unsigned.apk ${ANDROID_KEY_ALIAS}
     jarsigner -verify -certs platforms/android/build/outputs/apk/android-armv7-release-unsigned.apk
     ${ANDROID_ZIPALIGN} -vf 4 platforms/android/build/outputs/apk/android-armv7-release-unsigned.apk ./build/wphc-android-armv7.apk
+#
+#    fi
 fi
 
 if [[ " ${platforms[*]} " == *" ios "* ]]; then
