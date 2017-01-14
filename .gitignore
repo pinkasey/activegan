@@ -1,6 +1,8 @@
 # pinkasey
 *.iml
 .DS_Store
+/res/
+/test/
 
 # Logs
 logs
