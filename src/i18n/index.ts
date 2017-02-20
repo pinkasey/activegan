@@ -10,3 +10,4 @@ import './ru.cson';
 import './tr.cson';
 import './ur.cson';
 import './zh.cson';
+import './he.cson';

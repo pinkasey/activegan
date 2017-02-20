@@ -4,6 +4,7 @@ import { PostsPage } from './posts/posts';
 import { TaxonomiesModal } from './taxonomies-modal/taxonomies-modal';
 
 export const MenuMapping = {
+    taxonomies: TaxonomiesModal,
     post: PostPage,
     posts: PostsPage
 }

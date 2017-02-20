@@ -1,34 +1,58 @@
-"title": "ActiVegan app"
+title: "ActiVegan app"
 
 # API
-"api":
-    "baseUrl": "http://activegan.anonymous.org.il/wp-json"
-    "timeout": 7000
-    "maxAttempt": 2
+api:
+    baseUrl: "http://activegan.anonymous.org.il/wp-json"
+    timeout: 7000
+    maxAttempt: 2
 
 
 
-"taxonomies":
-    "posts":
-        "query":
-            "orderby" : "menu_order"
-            "order": "asc"
+taxonomies:
+    posts:
+        query:
+            orderby : "menu_order"
+            order: "asc"
 
 
-"translation":
-    "displayed" : ["en", "he"]
-    "prefered": "he"
+translation:
+    displayed : ["en", "he"]
+    prefered: "he"
 
 
-"cordova":
-    "pushNotifications":
-        "enabled": true
-        "baseUrl": "http://activegan.anonymous.org.il/pnfw"
-        "android":
+cordova:
+    pushNotifications:
+        enabled: true
+        baseUrl: "http://activegan.anonymous.org.il/pnfw"
+        android:
             "senderID": "1037605906337"
 
 # MENU
-"menu":
-    "defaultState":
-        "state": "public.taxonomies"
-        "params": { term: 'categories', postType: 'post' }
+menu:
+    defaultState:
+        state: "public.taxonomies"
+        params: { term: 'categories', postType: 'post' }
+    options:
+        externalLinkTarget : null # _self|_blank|_system default: _system https://github.com/apache/cordova-plugin-inappbrowser#cordovainappbrowseropen
+        externalLinkOptions: null # default: 'location=yes'
+        exposeAsideWhen: "(min-width:900px)"
+        displayIcon: true # uses config/icons/icon_48.png
+    list: [
+        type: "internal"
+        trans: "menu.categories"
+        route: "public.taxonomies"
+        page: "taxonomies"
+        params: { term: 'categories', postType: 'post', title: 'menu.categories' }
+        icon: "home"
+    ,
+        type: "internal"
+        trans: "menu.pages"
+        page: "pages"
+        icon: "home"
+    ,
+        type: "internal"
+        trans: "menu.post"
+        page: "posts"
+        params: {}
+        icon: "home"
+    ]
