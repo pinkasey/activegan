@@ -1,0 +1,42 @@
+"title": "ActiVegan app"
+
+
+title: "אקטיויגן"
+
+defaultPage:
+  page: "list"
+  params:
+    type: "categories"
+
+toast:
+    duration: 3000
+    position: "bottom" # Accepted values: "top", "middle", "bottom".
+
+api:
+    baseUrl: "http://activegan.anonymous.org.il/wp-json"
+    timeout: 7000
+    maxAttempt: 2
+    perPage: 20
+
+# still working?
+#defaultState:
+#        state: "public.taxonomies"
+#        params: { term: 'categories', postType: 'post' }
+
+taxonomies:
+    posts:
+        query:
+            orderby : "menu_order"
+            order: "asc"
+
+
+translation:
+    displayed : ["en", "he"]
+    prefered: "he"
+
+
+pushNotifications:
+      enabled: true
+      baseUrl: "http://activegan.anonymous.org.il/pnfw"
+      android:
+          senderID: "1037605906337"

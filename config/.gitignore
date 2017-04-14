@@ -1,3 +1,5 @@
 *
 !config.default.cson
 !.gitignore
+!config.cson
+!menu.json
