@@ -1,0 +1,92 @@
+{
+    "PULL_TO_REFRESH": "משוך לעדכן!",
+    "RETRY": "נסה שוב",
+    "CANCEL": "ביטול",
+    "SUBMIT": "בצע",
+    "BACK": "חזור",
+    "ERROR": "משהו השתבש. אנא נסה שנית",
+    "ATTEMPT_TO_CONNECT": "ניסיון התחברות {{attempt}} מתוך {{attemptMax}}.",
+    "OK": "אוקי",
+    "YES": "כן",
+    "NO": "לא",
+    "EMPTY_LIST": "אין תוכן",
+    "ENABLED": "פעיל",
+    "MENU": "תפריט",
+    "HOME": "בית",
+    "TAGS": "תגיות",
+    "PAGES": "עמודים",
+    "POSTS": "פוסטים",
+    "AUTHORS": "מחברים",
+    "SEARCH": "חיפוש",
+    "SOCIAL_NETWORKS": "רשתות חברתיות",
+    "CATEGORIES": "קטגוריות",
+    "SETTINGS": "אפשרויות",
+    "CUSTOM_POSTS": "פוסטים מותאמים אישית",
+    "CUSTOM_TAXO": "טקסונומיות מותאמות אישית",
+    "CUSTOM_TAXO_TITLE": "{{term}}: {{name}}",
+    "PUSH_NOTIFS": "התראות פוש",
+    "PUSH_NOTIF_TITLE": "הודעה חשובה!",
+    "PUSH_NOTIF_TEXT": "קיבלת הודעה מ{{appTitle}}: {{postTitle}}. האם ברצונך לפתוח אותה?",
+    "BOOKMARKS": "סימניות",
+    "BOOKMARKS_EMPTY": "אין סימניות",
+    "BOOKMARK_ADDED": "סימניה נוספה",
+    "BOOKMARK_REMOVED": "סימניה הוסרה",
+    "ZOOM": "זום",
+    "CACHE_CLEAR": "מחק עותק מקומי של תמונות",
+    "CACHE_CLEAR_PROMPT": "התוכן ימחק מהמכשיר, ויורד שוב מהאינטרנט בפעם הבאה שתטען אותו",
+    "CACHE_CLEARED": "זיכרון מטמון נוקה",
+    "tags":{
+        "title": "תגיות"
+    },
+    "tag":{
+        "title": "תג: {{name}}"
+    },
+    "categories":{
+        "title": "קטגוריות"
+    },
+    "category": {
+        "title": "Category: {{name}}"
+    },
+    "home":{
+        "title": "בית"
+    },
+    "search": {
+        "inputPlaceholder": "חפש",
+        "title": "חיפוש",
+        "titleQuery": "חפש: {{query}}"
+    },
+    "sharing": {
+        "shared": "שותף!"
+    },
+    "AUTHORS": "מחברים",
+    "AUTHOR": "מחבר",
+    "AUTHOR_TITLE": "מחבר: {{name}}",
+    "pages": {
+        "title": "עמודים"
+    },
+    "posts": {
+        "title": "פוסטים",
+        "featured": "מומלץ"
+    },
+    "post": {
+        "comments": "תגובות",
+        "openInBrowser": "פתח בדפדפן"
+    },
+    "about": {
+        "title": "אודות"
+    },
+    "languages": {
+        "en": "אנגלית",
+        "fr": "צרפתית",
+        "zh": "סינית",
+        "es": "ספרדית",
+        "pl": "פולנית",
+        "de": "גרמנית",
+        "pt": "פורטוגלית",
+        "it": "איטלקית",
+        "nl": "הולנדית",
+        "ru": "רוסית",
+        "tr": "טורקית",
+        "he": "עברית"
+    }
+}

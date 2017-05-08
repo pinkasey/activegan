@@ -48,9 +48,10 @@ export class WPHC {
     const appNode: any = document.querySelector('ion-app');
 
     this.title = config.get('title', '');
+    var defaultLanguage = config.get('defaultLanguage', 'en');
     // Set the default language for translation strings, and the current language.
-    translate.setDefaultLang('en');
-    translate.use('en');
+    translate.setDefaultLang(defaultLanguage);
+    translate.use(defaultLanguage);
 
     let defaultStorage = this.storage.init();
     Promise.all([defaultStorage, this.platform.ready()]).then(() => {

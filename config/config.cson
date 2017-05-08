@@ -3,6 +3,8 @@
 
 title: "אקטיויגן"
 
+defaultLanguage: "he"
+
 defaultPage:
   page: "list"
   params:
