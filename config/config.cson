@@ -10,9 +10,10 @@ api:
 defaultPage:
     page: 'categories'
 
-"translation":
-    "displayed" : ["en", "fr"]
-    "prefered": "en"
+# The user language is determined during runtime and if exists automatically used.
+language:
+    default: 'he'
+    imported: ['he', 'ar', 'br', 'de', 'en', 'es', 'fr', 'it', 'nl', 'pl', 'pt', 'ru', 'tr', 'ur', 'zh']
 
 # Static metas (for SEO purpose)
 # Each page will dynamically overwrite those
