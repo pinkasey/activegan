@@ -46,7 +46,7 @@ config.xml
 www/
 myapp/
 #/config/*
-/resources/
+/resources/README.md
 src/**/*.js
 src/**/*.js.map
 
