@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="il.org.anonymous.Activegan" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="il.org.anonymous.Activegan" version="0.3.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Activegan</name>
     <description>
         אפליקציית הסברה על זכויות בעלי חיים
@@ -65,11 +65,11 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.2" />
     <plugin name="cordova-plugin-wkwebview-engine" spec="~1.1.2" />
     <plugin name="cordova-plugin-whitelist" spec="^1.3.2" />
-    <engine name="android" spec="~6" />
     <plugin name="cordova-plugin-x-socialsharing" spec="~5.2.1" />
     <plugin name="cordova-plugin-admob-free" spec="~0.13.0" />
     <plugin name="cordova-android-play-services-gradle-release" spec="~1.1.4">
         <variable name="PLAY_SERVICES_VERSION" value="11.+" />
     </plugin>
     <preference name="SplashScreenDelay" value="3000" />
+    <engine name="android" spec="~6.1.2" />
 </widget>

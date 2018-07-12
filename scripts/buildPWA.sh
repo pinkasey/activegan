@@ -1,6 +1,6 @@
 #!/bin/bash
 PATH=$PATH:$(npm bin)
-set -x
+#set -x
 
 BUILDFOLDER=www/
 SRCFOLDER=src/

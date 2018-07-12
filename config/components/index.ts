@@ -17,18 +17,16 @@ import { AuthorComponent } from '../../src/components/author/author';
 import { SpinnerComponent } from '../../src/components/spinner/spinner';
 import { ToolbarComponent } from '../../src/components/toolbar/toolbar';
 import { TaxonomyComponent } from '../../src/components/taxonomy/taxonomy';
-//import { PostCardComponent } from '../../src/components/post-card/post-card';
+import { PostCardComponent } from '../../src/components/post-card/post-card';
 import { BookmarksComponent } from '../../src/components/bookmarks/bookmarks';
 import { MenuItemsComponent } from '../../src/components/menu-items/menu-items';
 import { EmptyListComponent } from '../../src/components/empty-list/empty-list';
 import { PageNavbarComponent } from '../../src/components/page-navbar/page-navbar';
 
 // Custom
-import { MovieListComponent } from './movie-list/movie-list';
-import { ActorListComponent } from './actor-list/actor-list';
-import { MovieItemComponent } from './movie-item/movie-item';
-import { PostCardComponent } from './post-card/post-card';
-
+//import { MovieListComponent } from './movie-list/movie-list';
+//import { ActorListComponent } from './actor-list/actor-list';
+//import { MovieItemComponent } from './movie-item/movie-item';
 
 export const ComponentsMapping = {
     // items
@@ -43,11 +41,11 @@ export const ComponentsMapping = {
     // Custom (this is just an example on how to add custom post types and can be removed)
     // it is important to keep the naming convention <type>-item because we use this pattern
     // to load those components dynamically
-    'movie-item': MovieItemComponent,
+//    'movie-item': MovieItemComponent,
     // it is important to keep the naming convention <type>-list because we use this pattern
     // to load those components dynamically
-    'movie-list': MovieListComponent,
-    'actor-list': ActorListComponent,
+//    'movie-list': MovieListComponent,
+//    'actor-list': ActorListComponent,
 };
 
 export const COMPONENTS = [
@@ -74,7 +72,7 @@ export const COMPONENTS = [
     BookmarksComponent,
     PageNavbarComponent,
     // Custom (this is just an example on how to add custom post types and can be removed)
-    MovieListComponent,
-    MovieItemComponent,
-    ActorListComponent,
+//    MovieListComponent,
+//    MovieItemComponent,
+//    ActorListComponent,
 ];

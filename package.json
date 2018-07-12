@@ -32,6 +32,7 @@
     "ionic:start": "ionic serve",
     "ionic:resources": "ionic cordova resources",
     "ionic:build": "ionic build",
+    "ionic:buildAndroid": "ionic cordova build android --prod --release --verbose",
     "ionic:requirements": "ionic cordova requirements",
     "clean": "ionic-app-scripts clean",
     "run:android": "ionic build && npm run ionic:run android --livereload",
