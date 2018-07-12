@@ -1,5 +1,5 @@
 # Here you can overwrite any of the src/config.default.cson
-title: "My Blog title"
+title: "אקטיויגן"
 search:
     types: ['posts', 'pages', 'movie']
 api:
