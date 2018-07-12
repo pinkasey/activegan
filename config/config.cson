@@ -33,13 +33,6 @@ metas:
     twitterSite: ''
     twitterCreator: '@AnimalAnonymous'
 
-admob:
-    bannerEnabled: false
-    interstitialEnabled: false
-    config:
-        publisherId: null
-        interstitialAdId: null
-        isTesting: true
 
 pushNotifications:
     enabled: true

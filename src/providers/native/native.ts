@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import debug from 'debug';
 import { StatusBar } from '@ionic-native/status-bar';
-import { AdMobFree, AdMobFreeBannerConfig } from '@ionic-native/admob-free';
 
 import { Config } from '../config';
 
@@ -19,12 +18,10 @@ export class NativeProvider {
   constructor(
     private config: Config,
     private statusBar: StatusBar,
-    private admobFree: AdMobFree,
   ) { }
 
   init() {
     this.statusBarInit();
-    this.addMobInit();
   }
 
   statusBarInit() {
@@ -48,32 +45,6 @@ export class NativeProvider {
     } else if (style === 'blackOpaque') {
       this.statusBar.styleBlackOpaque();
     }
-  }
-
-  addMobInit() {
-    const bannerEnabled: boolean = this.config.getAdMob('bannerEnabled', false);
-    const interstitialEnabled: boolean = this.config.getAdMob('interstitialEnabled', false);
-    const config: AdMobFreeBannerConfig = this.config.getAdMob('config', {});
-
-    log('addMob bannerEnabled', bannerEnabled);
-    log('addMob interstitialEnabled', interstitialEnabled);
-    log('addMob config', config);
-
-    if (bannerEnabled) {
-      this.admobFree.banner.config(config);
-      this.admobFree.banner.prepare()
-        .then(() => log('addMob banner ready'))
-        .catch(error => log('addMob banner error', error));
-    }
-
-    if (interstitialEnabled) {
-      this.admobFree.interstitial.config(config);
-
-      this.admobFree.interstitial.prepare()
-        .then(() => log('addMob interstitial ready'))
-        .catch(error => log('addMob interstitial error', error));
-    }
-
   }
 
 }
