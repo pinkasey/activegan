@@ -14,7 +14,7 @@ const RawConfig = deepExtend(defaultConfig, configOverwrite);
 
 var prodPlugins = [];
 if (process.env.IONIC_ENV === 'prod') {
-  prodPlugins.push(new ModuleConcatPlugin());
+  //prodPlugins.push(new ModuleConcatPlugin());
 }
 
 const webpackConfig = {
@@ -25,7 +25,7 @@ const webpackConfig = {
     filename: '[name].js',
     devtoolModuleFilenameTemplate: ionicWebpackFactory.getSourceMapperFunction(),
   },
-  devtool: process.env.IONIC_SOURCE_MAP_TYPE,
+  devtool: 'source-map',
 
   resolve: {
     extensions: ['.ts', '.js', '.json', '.cson'],
@@ -67,7 +67,7 @@ const webpackConfig = {
     new webpack.DefinePlugin({
       __VERSION__: JSON.stringify(getAppVersion()),
       __DEV__: process.env.IONIC_ENV === 'dev',
-      __PROD__: process.env.IONIC_ENV === 'prod',
+      __PROD__: process.env.IONIC_ENV === 'dev',
       __SW_ENABLED__: JSON.stringify(RawConfig.serviceWorker.enabled),
       __CONFIG_FOLDER__: JSON.stringify(process.env.IONIC_ROOT_DIR + '/config'),
     }),
@@ -93,6 +93,7 @@ const webpackConfig = {
 module.exports = {
   dev: webpackConfig,
   prod: webpackConfig
+
 }
 
 function getRegexAutorizedLanguages() {
