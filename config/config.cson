@@ -1,0 +1,47 @@
+# Here you can overwrite any of the src/config.default.cson
+title: "My Blog title"
+search:
+    types: ['posts', 'pages', 'movie']
+api:
+    baseUrl: "https://activegan.anonymous.org.il/wp-json"
+    timeout: 10000
+    maxAttempt: 2
+
+defaultPage:
+    page: 'categories'
+
+"translation":
+    "displayed" : ["en", "fr"]
+    "prefered": "en"
+
+# Static metas (for SEO purpose)
+# Each page will dynamically overwrite those
+metas:
+    title: 'אקטיויגן'
+    description: 'אפליצקיית הסברה על זכויות בעלי חיים'
+    themeColor: '#4e8ef7'
+    contentSecurityPolicy: "default-src *; img-src * 'self' data:;style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'"
+    # Open graph
+    ogTitle: 'אקטיויגן'
+    ogType: 'website'
+    ogUrl: 'https://activegan.anonymous.org.il'
+    ogImage: ''
+    ogImageWidth: 400
+    ogImageHeight: 400
+    # Twitter card
+    twitterSite: ''
+    twitterCreator: '@AnimalAnonymous'
+
+admob:
+    bannerEnabled: false
+    interstitialEnabled: false
+    config:
+        publisherId: null
+        interstitialAdId: null
+        isTesting: true
+
+pushNotifications:
+    enabled: true
+    baseUrl: "http://activegan.anonymous.org.il/pnfw"
+    android:
+        senderID: "1037605906337"

@@ -1,0 +1,35 @@
+[
+    {
+        "type": "internal",
+        "trans": "HOME",
+        "page": "categories",
+        "icon": "home",
+        "navRoot": true
+    },
+    {
+        "type": "internal",
+        "trans": "All",
+        "page": "posts",
+        "icon": "paper",
+        "navRoot": true
+    },
+    {
+        "type": "internal",
+        "trans": "BOOKMARKS",
+        "page": "bookmarks",
+        "params": {},
+        "icon": "bookmarks",
+        "navRoot": true
+    },
+    {
+        "type": "separator"
+    },
+    {
+        "type": "internal",
+        "trans": "SETTINGS",
+        "page": "params",
+        "params": {},
+        "icon": "cog",
+        "navRoot": true
+    }
+]
